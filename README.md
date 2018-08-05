@@ -1,2 +1,2 @@
 # chucknorris-jokes-angularjs
-This is AngularJS projects that generates Chuck Norris jokes
+This is an AngularJS projects that generates Chuck Norris jokes

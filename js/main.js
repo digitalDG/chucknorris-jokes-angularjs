@@ -6,6 +6,7 @@ app.controller('myCtrl', ['$scope', '$http', function($scope, $http) {
 
   // get a random joke so a joke is able to be displayed initially. Exclude explict jokes
   $.getJSON('https://api.icndb.com/jokes/random?exclude=[explicit]', function(data) {
+    // using Lodash to unescape characters
     obj.joke = _.unescape(data.value.joke);
     $scope.jokes.push(obj);
     $scope.$apply();
@@ -18,6 +19,7 @@ app.controller('myCtrl', ['$scope', '$http', function($scope, $http) {
 
     // Exclude explict jokes
     $.getJSON('https://api.icndb.com/jokes/random?exclude=[explicit]', function(data) {
+        // using Lodash to unescape characters
         obj.joke = _.unescape(data.value.joke);
         $scope.jokes.push(obj);
         $scope.$apply();
